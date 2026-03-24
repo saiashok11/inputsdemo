@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       environments:
-        description: choose the environments tp deploy
+        description: this is input demo
         required: true
         default: dev
       tags:
