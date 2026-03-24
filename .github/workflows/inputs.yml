@@ -6,10 +6,14 @@ on:
         description: choose the environments tp deploy
         required: true
         default: dev
+      tags:
+        description: this is tag
+        required: true
+        default: 1.0.0
 
 jobs:
   inputs-demo:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy the app
-        run: echo "Depoly the application to ${{inputs.environments}}"
+        run: echo "Depoly the ${{inputs.tags}} application to ${{inputs.environments}}"
